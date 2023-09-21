@@ -19,7 +19,7 @@ bool IsInitialized = false;
 BOOL __fastcall hkIsWindowedInternal(IDXGISwapChain3* pSwapChain) {
 
     if (!IsInitialized) {
-        Globals::gWindow = Draw::MyGetWindow();//"Call of Duty® HQ" "gfx_test"
+        Globals::gWindow = Draw::MyGetWindow();//"Call of DutyÂ® HQ" "gfx_test"
 
         if (!Globals::gWindow) {
             return 0;
@@ -41,7 +41,7 @@ BOOL __fastcall hkIsWindowedInternal(IDXGISwapChain3* pSwapChain) {
 
 
     Draw::Begin();
-    Draw::vDrawText("poopy fuck", { 0, 0 }, 18.0f, { 255, 255, 255, 255 }, false);
+    Draw::vDrawText("test", { 0, 0 }, 18.0f, { 255, 255, 255, 255 }, false);
     
 
     Draw::End();
